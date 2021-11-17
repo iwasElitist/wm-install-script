@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+echo "setting up applications..."
+sudo xbps-install -Sy alacritty qutebrowser feh mpv zathura
+mkdir -p ~/.config/alacritty/ ~/.config/mpv/ ~/.config/zathura/
+cp ~/Source/distro-hopping/config/alacritty/alacritty.yml ~/.config/alacritty/
+cp ~/Source/distro-hopping/config/qutebrowser/config.py ~/.config/qutebrowser/
+cp ~/Source/distro-hopping/mpv/mpv.conf ~/.config/mpv/
+cp ~/Source/distro-hopping/zathura/zathurarc ~/.config/zathurarc/
+echo "application setup finished..."
+sleep 5; clear
