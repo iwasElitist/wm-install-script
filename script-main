@@ -40,6 +40,11 @@ sudo xbps-install -S chrony
 ln -s /etc/sv/chronyd /var/service/
 echo "enabled chrony/chronyd..."
 
+# Move .startpage file
+
+cp ~/Source/distro-hopping/homepage/ ~/.startpage
+echo "copied .startpage to home-dir..."
+
 # Check to reboot
 
 ./script-reboot
