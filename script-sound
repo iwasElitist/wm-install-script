@@ -3,9 +3,13 @@
 echo "setting up sound..."
 sudo xbps-install -S pipewire pipewire-pulse alsa-pipewire libspa-bluetooth
 clear; echo "pipewire installation finished..."
+
+# Replacement for alsa
+
 mkdir -p /etc/alsa/conf.d
 ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
 ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
 clear; echo "integrated with alsa..."
+
 echo "sound setup finished..."
 sleep 5; clear

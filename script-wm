@@ -4,7 +4,6 @@ echo "installing window-manager..."
 sudo xbps-install -Sy bspwm sxhkd picom polybar rofi
 mkdir -p ~/.config/bspwm/ ~/.config/sxhkd/ ~/.config/picom/ ~/.config/polybar/ ~/.config/rofi/
 cp ~/Source/distro-hopping/config/bspwm/bspwmrc ~/.config/bspwm/
-chmod +x ~/.config/bspwm/bspwmrc; echo "bspwmrc made executable"
 cp ~/Source/distro-hopping/config/sxhkd/sxhkdrc ~/.config/sxhkd/
 cp ~/Source/distro-hopping/config/picom/picom.conf ~/.config/picom/
 cp ~/Source/distro-hopping/config/polybar/* ~/.config/polybar/

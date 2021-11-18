@@ -10,4 +10,4 @@ clear; echo "enabled dbus and elogind..."
 
 sudo xbps-install -S chrony
 ln -s /etc/sv/chronyd /var/service/
-echo "copied .startpage to home-dir..."
+echo "enabled chronyd..."

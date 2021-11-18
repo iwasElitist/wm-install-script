@@ -4,7 +4,12 @@ echo "setting up applications..."
 sudo xbps-install -Sy alacritty qutebrowser feh mpv zathura
 mkdir -p ~/.config/alacritty/ ~/.config/mpv/ ~/.config/zathura/ ~/Pictures/Wallpaper ~/.config/qutebrowser
 cp ~/Source/distro-hopping/config/alacritty/alacritty.yml ~/.config/alacritty/
+
+# Setting up qutebrowser theme
+
+git clone https://github.com/dracula/qutebrowser-dracula-theme.git ~/.config/qutebrowser/dracula
 cp ~/Source/distro-hopping/config/qutebrowser/config.py ~/.config/qutebrowser/
+
 cp ~/Source/distro-hopping/mpv/mpv.conf ~/.config/mpv/
 cp ~/Source/distro-hopping/zathura/zathurarc ~/.config/zathurarc/
 cp ~/Source/distro-hopping/wallpaper/Wallpaper.png ~/Pictures/Wallpaper/Wallpaper.png
