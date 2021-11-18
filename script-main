@@ -4,7 +4,7 @@
 
 echo "Checking for updates..."
 sudo xbps-install -Syu
-clear; echo "System updated..."
+clear; echo "System updated..."; sleep 2
 
 # Create Directories
 
@@ -13,38 +13,39 @@ git clone https://github.com/iwasElitist/distro-hopping.git ~/Source/distro-hopp
 
 # Start the actual process
 
-clear; echo "starting scripts..."
+clear; echo "starting scripts..."; sleep 2
 ./script-xorg
 ./script-wm
 
 # Setup .scripts directory
 
 cp ~/Source/distro-hopping/scripts ~/.scripts
+
+# Setting up sound
+
 ./script-sound
+
+# Installing/setting up applications
+
 ./script-applications
 
 # Install fonts
 
 sudo xbps-install -S font-iosevka cantarell-fonts
-echo "fonts installed..."
+clear; echo "fonts installed..."; sleep 2
 
-# Enable dbus and elogind
+# Enable daemons
 
-sudo xbps-install -S dbus elogind
-ln -s /etc/sv/dbus /var/service/
-clear; echo "enabled dbus and elogind..."
-
-# Enable Chrony/Chronyd
-
-sudo xbps-install -S chrony
-ln -s /etc/sv/chronyd /var/service/
-echo "enabled chrony/chronyd..."
+clear; echo "enabling daemons..."
+./script-daemons
+echo "started all the daemons..."; sleep 2; clear
 
 # Move .startpage file
 
 cp ~/Source/distro-hopping/homepage/ ~/.startpage
-echo "copied .startpage to home-dir..."
+echo "copied .startpage to home-dir..."; sleep 2
 
 # Check to reboot
 
 ./script-reboot
+echo -n "script finished..."
