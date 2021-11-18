@@ -8,14 +8,4 @@ clear; echo "starting script..."
 ./script-applications
 
 # Check to reboot
-
-echo -n "Enter a choice [Y/n] "; read choice
-if [[ "$choice"  == "y" ]]; then
-	sudo reboot
-elif [[ "$choice"  == "" ]]; then
-	sudo reboot
-elif [[ "$choice" == "n" ]]; then
-	echo "You entered no [no reboot]"
-else
-	echo "You entered $choice, which is invalid [no reboot]"
-fi
+./script-reboot
