@@ -1,15 +1,45 @@
 #! /usr/bin/env bash
 
+# Check for updates
+
 echo "Checking for updates..."
 sudo xbps-install -Syu
 clear; echo "System updated..."
+
+# Create Directories
+
 mkdir -p ~/Source/distro-hopping/ ~/.config/
 git clone https://github.com/iwasElitist/distro-hopping.git ~/Source/distro-hopping/
-clear; echo "starting script..."
+
+# Start the actual process
+
+clear; echo "starting scripts..."
 ./script-xorg
 ./script-wm
-# setup .scripts directory
+
+# Setup .scripts directory
+
 cp ~/Source/distro-hopping/scripts ~/.scripts
+./script-sound
 ./script-applications
+
+# Install fonts
+
+sudo xbps-install -S font-iosevka cantarell-fonts
+echo "fonts installed..."
+
+# Enable dbus and elogind
+
+sudo xbps-install -S dbus elogind
+ln -s /etc/sv/dbus /var/service/
+clear; echo "enabled dbus and elogind..."
+
+# Enable Chrony/Chronyd
+
+sudo xbps-install -S chrony
+ln -s /etc/sv/chronyd /var/service/
+echo "enabled chrony/chronyd..."
+
 # Check to reboot
+
 ./script-reboot
