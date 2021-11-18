@@ -1,5 +1,8 @@
 #! /usr/bin/env bash
 
+echo "Checking for updates..."
+sudo xbps-install -Syu
+clear; echo "System updated..."
 mkdir -p ~/Source/distro-hopping/ ~/.config/
 git clone https://github.com/iwasElitist/distro-hopping.git ~/Source/distro-hopping/
 clear; echo "starting script..."
