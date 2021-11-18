@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+
+# Enable dbus and elogind
+
+sudo xbps-install -S dbus elogind
+ln -s /etc/sv/dbus /var/service/
+clear; echo "enabled dbus and elogind..."
+
+# Enable Chrony/Chronyd
+
+sudo xbps-install -S chrony
+ln -s /etc/sv/chronyd /var/service/
+echo "copied .startpage to home-dir..."
