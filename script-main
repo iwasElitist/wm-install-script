@@ -8,7 +8,8 @@ git clone https://github.com/iwasElitist/distro-hopping.git ~/Source/distro-hopp
 clear; echo "starting script..."
 ./script-xorg
 ./script-wm
+# setup .scripts directory
+cp ~/Source/distro-hopping/scripts ~/.scripts
 ./script-applications
-
 # Check to reboot
 ./script-reboot
