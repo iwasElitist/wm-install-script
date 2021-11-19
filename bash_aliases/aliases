@@ -1,0 +1,10 @@
+# .bash_aliases
+
+# Store all of your aliases here
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
+# Application/script aliases
+
+alias wm-install-script='/usr/local/bin/wm-install-script'

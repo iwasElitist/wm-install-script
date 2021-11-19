@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+
+sudo rm -rf /usr/local/bin/wm-install-script
+sed -i '/alias wm-install-script=/usr/local/bin/wm-install-script/d' ~/.bash_aliases
+clear; echo "script uninstalled..."
+rm -rf ~/Source/*
