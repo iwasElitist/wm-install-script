@@ -11,3 +11,10 @@ clear; echo "enabled dbus and elogind..."
 sudo xbps-install -S chrony
 ln -s /etc/sv/chronyd /var/service/
 echo "enabled chronyd..."
+
+# Enable Cronie/Cronied
+
+sudo xbps-install -S cronie
+ln -s /etc/sv/cronie /var/service/
+echo "enabled cronie..."
+
