@@ -28,4 +28,4 @@ I frequently find myself having to re-install my window manager rice. I intend t
 
 **This is just a simple bash script and isn't supposed to be taken seriously.**
 
-**Any helpful modifications are appreciated. **
+**Any helpful modifications are appreciated.**
