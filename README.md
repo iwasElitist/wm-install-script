@@ -24,5 +24,7 @@ I frequently find myself having to re-install my window manager rice. I intend t
 
 - if you are running it in a vm be sure to install the ``xf86-video-vmware`` package.
 
-###### This is just a simple bash script and isn't supposed to be taken seriously.
-###### Any helpful modifications are appreciated. 
+## notes
+
+**This is just a simple bash script and isn't supposed to be taken seriously.**
+**Any helpful modifications are appreciated. **
