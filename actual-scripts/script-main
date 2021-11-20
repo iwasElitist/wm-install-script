@@ -11,17 +11,17 @@ git clone https://github.com/iwasElitist/distro-hopping.git ~/Source/distro-hopp
 
 # Start the actual process
 clear; echo "starting scripts..."; sleep 2
-./script-xorg
-./script-wm
+~/Source/script-xorg
+~/Source/script-wm
 
 # Setup .scripts directory
 cp -r ~/Source/distro-hopping/scripts ~/.scripts
 
 # Setting up sound
-./script-sound
+~/Source/script-sound
 
 # Installing/setting up applications
-./script-applications
+~/Source/script-applications
 
 # Install fonts
 sudo xbps-install -S font-iosevka cantarell-fonts
@@ -29,7 +29,7 @@ clear; echo "fonts installed..."; sleep 2
 
 # Enable daemons
 clear; echo "enabling daemons..."
-./script-daemons
+~/Source/script-daemons
 echo "started all the daemons..."; sleep 2; clear
 
 # Move .startpage file
@@ -37,5 +37,5 @@ cp -r ~/Source/distro-hopping/homepage/ ~/.startpage
 echo "copied .startpage to home-dir..."; sleep 2
 
 # Check to reboot
-./script-reboot
+~/Source/script-reboot
 echo -n "script finished..."
