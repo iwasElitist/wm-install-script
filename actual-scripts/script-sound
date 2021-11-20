@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 echo "setting up sound..."
-sudo xbps-install -S pipewire pipewire-pulse alsa-pipewire
+sudo xbps-install -Sy pipewire pipewire-pulse alsa-pipewire
 clear; echo "pipewire installation finished..."
 
 # Replacement for alsa
