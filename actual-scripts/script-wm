@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 echo "installing window-manager..."
-sudo xbps-install -Sy bspwm sxhkd picom polybar rofi
+sudo xbps-install -Sy bspwm sxhkd picom polybar rofi xsetroot
 mkdir -p ~/.config/bspwm/ ~/.config/sxhkd/ ~/.config/picom/ ~/.config/polybar/ ~/.config/rofi/
 cp ~/Source/distro-hopping/config/bspwm/bspwmrc ~/.config/bspwm/
 cp ~/Source/distro-hopping/config/sxhkd/sxhkdrc ~/.config/sxhkd/
