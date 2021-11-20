@@ -1,4 +1,4 @@
-## wm-install-script
+# wm-install-script
 
 > What is this ?
 

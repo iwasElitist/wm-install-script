@@ -2,6 +2,8 @@
 
 echo "everything is done..."
 echo ""
+
+# Actual choice
 echo -n "Do you want to reboot? [Y/n] "; read choice
 if [[ "$choice"  == "y" ]]; then
 	sudo reboot

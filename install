@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 
-sudo ln -s actual-scripts/script-main /usr/local/bin/wm-install-script
+sudo cp actual-scripts/script-main /usr/local/bin/wm-install-script
+chmod 0755 /usr/local/bin/wm-install-script; echo "setup wm-install-script..."
 echo "" >> ~/.bash_profile; cat bash_aliases/setup1 >> ~/.bash_profile
 echo "" >> ~/.bashrc; cat bash_aliases/setup2 >> ~/.bashrc
 touch ~/.bash_aliases; cat bash_aliases/aliases >> ~/.bash_aliases
