@@ -12,7 +12,7 @@ git clone https://github.com/iwasElitist/distro-hopping.git ~/Source/distro-hopp
 # Start the actual process
 clear; echo "starting scripts..."; sleep 2
 ~/Source/wm-install-script/actual-scripts/script-xorg
-~/Source/wm-install-script/script-wm
+~/Source/wm-install-script/actual-scripts/script-wm
 
 # Setup .scripts directory
 cp -r ~/Source/distro-hopping/scripts ~/.scripts
