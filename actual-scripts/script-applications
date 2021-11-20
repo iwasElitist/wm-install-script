@@ -11,6 +11,6 @@ cp ~/Source/distro-hopping/config/qutebrowser/config.py ~/.config/qutebrowser/
 
 cp ~/Source/distro-hopping/config/mpv/mpv.conf ~/.config/mpv/
 cp ~/Source/distro-hopping/config/zathura/zathurarc ~/.config/zathurarc/
-cp ~/Source/distro-hopping/wallpaper/Wallpaper.png ~/Pictures/Wallpaper/Wallpaper.png
+cp ~/Source/distro-hopping/wallpaper/Wallpaper.png ~/Pictures/Wallpapers/Wallpaper.png
 echo "application setup finished..."
 sleep 5; clear
