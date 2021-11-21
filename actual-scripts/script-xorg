@@ -11,7 +11,7 @@ sed -i '/xterm -geometry 80x50+494+51 &/d' ~/.xinitrc
 sed -i '/xterm -geometry 80x20+494-0 &/d' ~/.xinitrc
 sed -i '/exec xterm -geometry 80x66+0+0 -name login/d' ~/.xinitrc
 
-echo "" >> ~/.xinitrc"
+echo "" >> ~/.xinitrc
 cat ~/Source/distro-hopping/xinitrc >> ~/.xinitrc
 echo "xorg setup finished..."
 sleep 5; clear
