@@ -12,5 +12,10 @@ cp ~/Source/distro-hopping/config/qutebrowser/config.py ~/.config/qutebrowser/
 cp ~/Source/distro-hopping/config/mpv/mpv.conf ~/.config/mpv/
 cp ~/Source/distro-hopping/config/zathura/zathurarc ~/.config/zathura/
 cp ~/Source/distro-hopping/wallpaper/Wallpaper.png ~/Pictures/Wallpapers/Wallpaper.png
+
+# Making the .desktop files modifiable
+mkdir ~/.local/share/applications/
+cp /usr/share/applications/ ~/.local/share/applications/
+
 echo "application setup finished..."
 sleep 5; clear

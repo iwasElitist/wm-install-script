@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-echo "everything is done..."
+clear; echo "everything is done..."
 echo ""
 
 # Actual choice
