@@ -9,6 +9,10 @@ cp ~/Source/distro-hopping/config/alacritty/alacritty.yml ~/.config/alacritty/
 git clone https://github.com/dracula/qutebrowser-dracula-theme.git ~/.config/qutebrowser/dracula
 cp ~/Source/distro-hopping/config/qutebrowser/config.py ~/.config/qutebrowser/
 
+# Setting up vim theme
+git clone https://github.com/morhetz/gruvbox.git ~/.vim/pack/default/start/gruvbox
+cp ~/Source/distro-hopping/vimrc ~/.vimrc
+
 cp ~/Source/distro-hopping/config/mpv/mpv.conf ~/.config/mpv/
 cp ~/Source/distro-hopping/config/zathura/zathurarc ~/.config/zathura/
 cp ~/Source/distro-hopping/wallpaper/Wallpaper.png ~/Pictures/Wallpapers/Wallpaper.png
