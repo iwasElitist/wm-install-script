@@ -2,3 +2,8 @@
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
+
+# Make a full screen vim
+if [ -f ~/.vim-mod ]; then
+	. ~/.vim-mod
+fi
