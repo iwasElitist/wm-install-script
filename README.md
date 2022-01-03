@@ -2,7 +2,7 @@
 
 > What is this ?
 
-Its an install script for my window manager rice. I prefer practicality over having to do everythingmanually, which is what lead me to do this, and also why I don't use [Arch-Linux](https://archlinux.org/) and prefer [Void-Linux](https://voidlinux.org/).
+Its an install script for my window manager rice. I prefer practicality over having to do everything manually, which is what lead me to do this, and also why I don't use [Arch-Linux](https://archlinux.org/) and prefer [Void-Linux](https://voidlinux.org/).
 
 > Why did you make it ?
 
