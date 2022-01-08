@@ -3,4 +3,5 @@
 sudo rm -rf /usr/local/bin/wm-install-script
 sed '$d' ~/.bash_aliases
 clear; echo "script uninstalled..."
-rm -rf ~/Source/*
+rm -rf ~/Source/distro-hopping/
+rm -rf ~/Source/wm-install-script/
