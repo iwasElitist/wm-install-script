@@ -1,0 +1,13 @@
+#! /bin/sh
+
+# Install/setup xorg
+echo $PASSWORD | sudo -S xbps-install -Sy xorg-minimal
+cp "/etc/X11/xinit/xinitrc" "$HOME/.xinitrc"
+
+# Removing useless lines
+sed -i '/twm &/d' "$HOME/.xinitrc"
+sed -i '/xclock -geometry 50x50-1+1 &/d' "$HOME/.xinitrc"
+sed -i '/xterm -geometry 80x50+494+51 &/d' "$HOME/.xinitrc"
+sed -i '/xterm -geometry 80x20+494-0 &/d' "$HOME/.xinitrc"
+sed -i '/exec xterm -geometry 80x66+0+0 -name login/d' "$HOME/.xinitrc"
+cat "$HOME/Source/distro-hopping/xinitrc" >> "$HOME/.xinitrc"

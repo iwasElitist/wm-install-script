@@ -10,7 +10,7 @@ I frequently find myself having to re-install my window manager rice. I intend t
 
 ## usage
 
-- make a directory called "Source" using ``mkdir ~/Source`` and clone this repo in it.
+- make a directory called "Source" using ``mkdir $HOME/Source`` and clone this repo in it.
 
 - run the executable using ``./install`` to install the script.
 

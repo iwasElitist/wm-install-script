@@ -1,0 +1,17 @@
+#! /bin/sh
+
+# Enter the password and store it
+echo -n "Password: "
+read -s PASSWORD; echo ""
+
+# Check for updates
+echo $PASSWORD | sudo -S xbps-install -Syu
+
+# Start the actual process
+$HOME/Source/wm-install-script/actual-scripts/script-extra
+$HOME/Source/wm-install-script/actual-scripts/script-xorg
+$HOME/Source/wm-install-script/actual-scripts/script-wm
+$HOME/Source/wm-install-script/actual-scripts/script-sound
+$HOME/Source/wm-install-script/actual-scripts/script-applications
+$HOME/Source/wm-install-script/actual-scripts/script-daemons
+$HOME/Source/wm-install-script/actual-scripts/script-reboot

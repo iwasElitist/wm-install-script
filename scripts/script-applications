@@ -1,0 +1,23 @@
+#! /bin/sh
+
+# Install applications/setup directories
+echo $PASSWORD | sudo -S xbps-install -Sy alacritty qutebrowser feh mpv zathura
+mkdir -p "$HOME/.config/nvim/" "$HOME/.config/alacritty/" "$HOME/.config/mpv/" "$HOME/.config/zathura/" "$HOME/Pictures/Wallpapers/" "$HOME/.config/qutebrowser/"
+
+# Setting up qutebrowser theme
+git clone "https://github.com/dracula/qutebrowser-dracula-theme.git" "$HOME/.config/qutebrowser/dracula"
+cp "$HOME/Source/distro-hopping/config/qutebrowser/config.py" "$HOME/.config/qutebrowser/"
+
+# Setting up neovim theme
+curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+cp "$HOME/Source/distrohopping/*" "$HOME/.config/nvim/"
+
+# Setup other applications
+cp "$HOME/Source/distro-hopping/config/alacritty/alacritty.yml" "$HOME/.config/alacritty/"
+cp "$HOME/Source/distro-hopping/config/mpv/mpv.conf" "$HOME/.config/mpv/"
+cp "$HOME/Source/distro-hopping/config/zathura/zathurarc" "$HOME/.config/zathura/"
+cp "$HOME/Source/distro-hopping/wallpaper/Wallpaper.png" "$HOME/Pictures/Wallpapers/"
+
+# Making the desktop files modifiable
+mkdir "$HOME/.local/share/applications/"
+cp "/usr/share/applications/*" "$HOME/.local/share/applications/"

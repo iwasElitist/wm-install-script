@@ -1,0 +1,8 @@
+#! /bin/sh
+
+# Actual choice
+echo -n "Do you want to reboot? [Y/n] "; read CHOICE
+case $CHOICE in
+    "y" | "Y" | "")         echo $PASSWORD | sudo -S shutdown -r now ;;
+    "n" | "N" | *)          echo "(NO REBOOT)" ;;
+esac
