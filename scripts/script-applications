@@ -10,7 +10,7 @@ cp "$HOME/Source/distro-hopping/config/qutebrowser/config.py" "$HOME/.config/qut
 
 # Setting up neovim theme
 curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-cp "$HOME/Source/distrohopping/*" "$HOME/.config/nvim/"
+cp -r "$HOME/Source/distro-hopping/config/nvim" "$HOME/.config/"
 
 # Setup other applications
 cp "$HOME/Source/distro-hopping/config/alacritty/alacritty.yml" "$HOME/.config/alacritty/"
@@ -20,4 +20,4 @@ cp "$HOME/Source/distro-hopping/wallpaper/Wallpaper.png" "$HOME/Pictures/Wallpap
 
 # Making the desktop files modifiable
 mkdir "$HOME/.local/share/applications/"
-cp "/usr/share/applications/*" "$HOME/.local/share/applications/"
+cp -r "/usr/share/applications" "$HOME/.local/share/"

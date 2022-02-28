@@ -2,7 +2,7 @@
 
 # Create Directories
 mkdir -p "$HOME/Source/distro-hopping/" "$HOME/.config/"
-git "clone https://github.com/iwasElitist/distro-hopping.git" "$HOME/Source/distro-hopping/"
+git clone "https://github.com/iwasElitist/distro-hopping.git" "$HOME/Source/distro-hopping/"
 
 # Setup scripts directory
 cp -r "$HOME/Source/distro-hopping/scripts" "$HOME/.scripts"
