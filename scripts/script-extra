@@ -13,6 +13,7 @@ echo $PASSWORD | sudo -S xbps-install -Sy font-iosevka cantarell-fonts
 # Move .startpage file
 cp -r "$HOME/Source/distro-hopping/homepage/" "$HOME/.startpage"
 
-# Setup bashrc/aliases
+# Setup bashrc/aliases/profile
 cat "$HOME/Source/wm-install-script/bash/rc" >> "$HOME/.bashrc"
 cat "$HOME/Source/wm-install-script/bash/aliases" > "$HOME/.bash_aliases"
+cat "$HOME/Source/wm-install-script/bash/profile" >> "$HOME/.bash_profile"
