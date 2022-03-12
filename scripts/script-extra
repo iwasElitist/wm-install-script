@@ -8,7 +8,7 @@ git clone "https://github.com/iwasElitist/distro-hopping.git" "$HOME/Source/dist
 cp -r "$HOME/Source/distro-hopping/scripts" "$HOME/.scripts"
 
 # Install fonts
-echo $PASSWORD | sudo -S xbps-install -Sy font-iosevka cantarell-fonts
+printf $PASSWORD | sudo -S xbps-install -Sy font-iosevka cantarell-fonts
 
 # Move .startpage file
 cp -r "$HOME/Source/distro-hopping/homepage/" "$HOME/.startpage"

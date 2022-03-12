@@ -1,9 +1,9 @@
 #! /bin/sh
 
 # Install required packages
-echo $PASSWORD | sudo -S xbps-install -Sy pipewire alsa-pipewire
+printf $PASSWORD | sudo -S xbps-install -Sy pipewire alsa-pipewire
 
 # Replacement for alsa
-echo $PASSWORD | sudo -S mkdir -p /etc/alsa/conf.d
-echo $PASSWORD | sudo -S ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
-echo $PASSWORD | sudo -S ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
+printf $PASSWORD | sudo -S mkdir -p /etc/alsa/conf.d
+printf $PASSWORD | sudo -S ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
+printf $PASSWORD | sudo -S ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d

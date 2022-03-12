@@ -1,19 +1,19 @@
 #! /bin/sh
 
 # Enable dbus and elogind
-echo $PASSWORD | sudo -S xbps-install -Sy dbus elogind
-echo $PASSWORD | sudo -S ln -s /etc/sv/dbus /var/service/
+printf $PASSWORD | sudo -S xbps-install -Sy dbus elogind
+printf $PASSWORD | sudo -S ln -s /etc/sv/dbus /var/service/
 
 # Enable Chrony/Chronyd
-echo $PASSWORD | sudo -S xbps-install -Sy chrony
-echo $PASSWORD | sudo -S ln -s /etc/sv/chronyd /var/service/
+printf $PASSWORD | sudo -S xbps-install -Sy chrony
+printf $PASSWORD | sudo -S ln -s /etc/sv/chronyd /var/service/
 
 # Enable Cronie/Cronied
-echo $PASSWORD | sudo -S xbps-install -Sy cronie
-echo $PASSWORD | sudo -S ln -s /etc/sv/cronie /var/service/
+printf $PASSWORD | sudo -S xbps-install -Sy cronie
+printf $PASSWORD | sudo -S ln -s /etc/sv/cronie /var/service/
 
 # Disable ttys
 for NUM in {2..5}; do
-    echo $PASSWORD | sudo -S rm /var/service/agetty-tty$NUM
-    echo $PASSWORD | sudo -S touch /etc/sv/agetty-tty$NUM/down
+    printf $PASSWORD | sudo -S rm "/var/service/agetty-tty$NUM"
+    printf $PASSWORD | sudo -S touch "/etc/sv/agetty-tty$NUM/down"
 done

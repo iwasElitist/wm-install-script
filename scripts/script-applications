@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Install applications/setup directories
-echo $PASSWORD | sudo -S xbps-install -Sy alacritty qutebrowser feh mpv zathura
+printf $PASSWORD | sudo -S xbps-install -Sy alacritty qutebrowser feh mpv zathura
 mkdir -p "$HOME/.config/nvim/" "$HOME/.config/alacritty/" "$HOME/.config/mpv/" "$HOME/.config/zathura/" "$HOME/Pictures/Wallpapers/" "$HOME/.config/qutebrowser/"
 
 # Setting up qutebrowser theme
