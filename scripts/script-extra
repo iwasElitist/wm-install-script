@@ -10,9 +10,6 @@ cp -r "$HOME/Source/distro-hopping/scripts" "$HOME/.scripts"
 # Install fonts
 printf $PASSWORD | sudo -S xbps-install -Sy font-iosevka cantarell-fonts
 
-# Install dev-tools
-printf $PASSWORD | sudo -S xbps-install -Sy base-devel
-
 # Move .startpage file
 cp -r "$HOME/Source/distro-hopping/homepage/" "$HOME/.startpage"
 

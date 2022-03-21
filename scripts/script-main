@@ -1,8 +1,8 @@
 #! /bin/sh
 
 # Enter the password and store it
-stty -printf; printf "PASSWORD: "
-read PASSWORD; stty printf; printf "\n";
+stty -echo; printf "PASSWORD: "
+read PASSWORD; stty echo; printf "\n";
 
 # Check for updates
 printf $PASSWORD | sudo -S xbps-install -Syu

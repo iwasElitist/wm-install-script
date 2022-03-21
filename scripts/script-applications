@@ -15,7 +15,7 @@ curl -fLo "$HOME/.config/nvim/autoload/plug.vim" --create-dirs "https://raw.gith
 cp -r "$HOME/Source/distro-hopping/config/alacritty" "$HOME/.config/"
 cp -r "$HOME/Source/distro-hopping/config/mpv" "$HOME/.config/"
 cp -r "$HOME/Source/distro-hopping/config/zathura" "$HOME/.config/"
-cp -r "$HOME/Source/distro-hopping/Wallpaper" "$HOME/Pictures/"
+cp -r "$HOME/Source/distro-hopping/Wallpapers" "$HOME/Pictures/"
 
 # Making the desktop files modifiable
 mkdir "$HOME/.local/share/applications/"
