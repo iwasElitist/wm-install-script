@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# Password
+PASSWORD=$(cat $HOME/Source/wm-install-script/.password)
+
 # Choose the packages
 PACKAGES='xorg-minimal bspwm sxhkd picom polybar rofi \
     xsetroot pipewire alsa-pipewire font-iosevka cantarell-fonts \

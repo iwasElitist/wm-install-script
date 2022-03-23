@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# Password
+PASSWORD=$(cat $HOME/Source/wm-install-script/.password)
+
 # Enable the services
 printf '%s' "$PASSWORD" | sudo -S ln -s /etc/sv/dbus /var/service/
 printf '%s' "$PASSWORD" | sudo -S ln -s /etc/sv/chronyd /var/service/

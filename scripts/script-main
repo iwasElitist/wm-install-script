@@ -2,7 +2,8 @@
 
 # Enter the password and store it
 stty -echo; printf "PASSWORD: "
-read PASSWORD; stty echo; printf "\n"
+read input; stty echo; printf '\n'
+print '%s' "$password" > "$HOME/Source/wm-install-script/.password"
 
 # Start the actual process
 $HOME/Source/wm-install-script/scripts/script-packages
