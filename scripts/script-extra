@@ -8,16 +8,10 @@ git clone "https://github.com/iwasElitist/distro-hopping.git" "$HOME/Source/dist
 cp -r "$HOME/Source/distro-hopping/scripts" "$HOME/.scripts"
 
 # Install fonts
-printf $PASSWORD | sudo -S xbps-install -Sy font-iosevka cantarell-fonts
+printf '%s' "$PASSWORD" | sudo -S xbps-install -Sy font-iosevka cantarell-fonts
 
 # Move .startpage file
 cp -r "$HOME/Source/distro-hopping/homepage/" "$HOME/.startpage"
-
-# Install gtk-theme (dracula)
-printf $PASSWORD | sudo -S xbps-install -Sy unzip zip
-mkdir -p "$HOME/.themes" "$HOME/.icons"
-wget "https://codeload.github.com/dracula/gtk/zip/refs/heads/master" -o "$HOME/.themes/master.zip"
-unzip "$HOME/.themes/master.zip" -d "$HOME/.themes/dracula"; rm -rf "$HOME/.themes/master.zip"
 
 # Setup bashrc/aliases/profile
 cat "$HOME/Source/wm-install-script/bash/rc" >> "$HOME/.bashrc"

@@ -3,6 +3,6 @@
 # Actual choice
 printf "Do you want to reboot? [Y/n] "; read CHOICE
 case $CHOICE in
-    "y" | "Y" | "")         printf $PASSWORD | sudo -S shutdown -r now ;;
+    "y" | "Y" | "")         printf '%s' "$PASSWORD" | sudo -S shutdown -r now ;;
     "n" | "N" | *)          printf "(NO REBOOT)\n" ;;
 esac

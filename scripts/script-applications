@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Install applications/setup directories
-printf $PASSWORD | sudo -S xbps-install -Sy alacritty qutebrowser feh mpv zathura
+printf '%s' "$PASSWORD" | sudo -S xbps-install -Sy alacritty qutebrowser feh mpv zathura
 
 # Setting up qutebrowser theme
 cp -r "$HOME/Source/distro-hopping/config/qutebrowser" "$HOME/.config/"

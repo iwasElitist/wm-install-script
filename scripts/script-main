@@ -2,10 +2,10 @@
 
 # Enter the password and store it
 stty -echo; printf "PASSWORD: "
-read PASSWORD; stty echo; printf "\n";
+read PASSWORD; stty echo; printf "\n"
 
 # Check for updates
-printf $PASSWORD | sudo -S xbps-install -Syu
+printf '%s' "$PASSWORD" | sudo -S xbps-install -Syu
 
 # Start the actual process
 $HOME/Source/wm-install-script/scripts/script-extra
