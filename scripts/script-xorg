@@ -1,7 +1,6 @@
 #! /bin/sh
 
-# Install/setup xorg
-printf '%s' "$PASSWORD" | sudo -S xbps-install -Sy xorg-minimal
+# Setup xorg
 cp "/etc/X11/xinit/xinitrc" "$HOME/.xinitrc"
 
 # Removing useless lines

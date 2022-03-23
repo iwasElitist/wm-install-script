@@ -1,8 +1,5 @@
 #! /bin/sh
 
-# Install applications/setup directories
-printf '%s' "$PASSWORD" | sudo -S xbps-install -Sy alacritty qutebrowser feh mpv zathura
-
 # Setting up qutebrowser theme
 cp -r "$HOME/Source/distro-hopping/config/qutebrowser" "$HOME/.config/"
 git clone "https://github.com/dracula/qutebrowser-dracula-theme.git" "$HOME/.config/qutebrowser/dracula"

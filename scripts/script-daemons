@@ -1,15 +1,8 @@
 #! /bin/sh
 
-# Enable dbus and elogind
-printf '%s' "$PASSWORD" | sudo -S xbps-install -Sy dbus elogind
+# Enable the services
 printf '%s' "$PASSWORD" | sudo -S ln -s /etc/sv/dbus /var/service/
-
-# Enable Chrony/Chronyd
-printf '%s' "$PASSWORD" | sudo -S xbps-install -Sy chrony
 printf '%s' "$PASSWORD" | sudo -S ln -s /etc/sv/chronyd /var/service/
-
-# Enable Cronie/Cronied
-printf '%s' "$PASSWORD" | sudo -S xbps-install -Sy cronie
 printf '%s' "$PASSWORD" | sudo -S ln -s /etc/sv/cronie /var/service/
 
 # Disable ttys

@@ -1,8 +1,5 @@
 #! /bin/sh
 
-# Install required packages
-printf '%s' "$PASSWORD" | sudo -S xbps-install -Sy bspwm sxhkd picom polybar rofi xsetroot
-
 # Setup configuration files
 cp -r "$HOME/Source/distro-hopping/config/bspwm" "$HOME/.config/"
 cp -r "$HOME/Source/distro-hopping/config/sxhkd" "$HOME/.config/"

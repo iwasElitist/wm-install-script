@@ -4,10 +4,8 @@
 stty -echo; printf "PASSWORD: "
 read PASSWORD; stty echo; printf "\n"
 
-# Check for updates
-printf '%s' "$PASSWORD" | sudo -S xbps-install -Syu
-
 # Start the actual process
+$HOME/Source/wm-install-script/scripts/script-packages
 $HOME/Source/wm-install-script/scripts/script-extra
 $HOME/Source/wm-install-script/scripts/script-xorg
 $HOME/Source/wm-install-script/scripts/script-wm
