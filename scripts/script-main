@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 
 # Enter the password and store it
-stty -echo; printf "PASSWORD: "
-read input; stty echo; printf '\n'
-printf '%s' "$password" > "$HOME/Source/wm-install-script/.password"
+printf "PASSWORD: "
+read -s input; printf '\n'
+printf '%s' "$input" > "$HOME/Source/wm-install-script/.password"
 
 # Start the actual process
 $HOME/Source/wm-install-script/scripts/script-packages
