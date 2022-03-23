@@ -3,6 +3,7 @@
 # Use the commands
 printf "OPTIONS: \033[32minstall, remove_files, update_script\033[m \n"
 printf "COMMAND: "; read COMMAND; printf "\n"
+chmod +x $HOME/Source/wm-install-script/scripts/*
 case $COMMAND in
     install)            $HOME/Source/wm-install-script/scripts/script-main ;;
     remove_files)       rm -rf  "$HOME/Source/distro-hopping/" && rm -rf "$HOME/Source/wm-install-script/" ;;

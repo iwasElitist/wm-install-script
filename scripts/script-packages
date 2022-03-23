@@ -4,10 +4,7 @@
 PASSWORD=$(cat $HOME/Source/wm-install-script/.password)
 
 # Choose the packages
-PACKAGES='xorg-minimal bspwm sxhkd picom polybar rofi \
-    xsetroot pipewire alsa-pipewire font-iosevka cantarell-fonts \
-    dbus elogind chrony cronie alacritty qutebrowser feh \
-    mpv zathura'
+PACKAGES='xorg-minimal bspwm sxhkd picom polybar rofi xsetroot pipewire alsa-pipewire font-iosevka cantarell-fonts dbus elogind chrony cronie alacritty qutebrowser feh mpv zathura'
 
 # Install the packages
 printf '%s' "$PASSWORD" | sudo -S xbps-install -Syu $PACKAGES
