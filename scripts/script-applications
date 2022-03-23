@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /usr/bin/env bash
 
 # Setting up qutebrowser theme
 cp -r "$HOME/Source/distro-hopping/config/qutebrowser" "$HOME/.config/"

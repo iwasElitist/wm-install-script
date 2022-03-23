@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /usr/bin/env bash
 
 # Password
 PASSWORD=$(cat $HOME/Source/wm-install-script/.password)

@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /usr/bin/env bash
 
 # Enter the password and store it
 stty -echo; printf "PASSWORD: "

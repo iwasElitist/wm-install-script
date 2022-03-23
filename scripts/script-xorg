@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /usr/bin/env bash
 
 # Setup xorg
 cp "/etc/X11/xinit/xinitrc" "$HOME/.xinitrc"

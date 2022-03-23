@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /usr/bin/env bash
 
 # Create Directories
 mkdir -p "$HOME/Source/distro-hopping/" "$HOME/.config/"
