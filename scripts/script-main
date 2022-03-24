@@ -2,8 +2,8 @@
 
 # Enter the password and store it
 printf "PASSWORD: "
-read -s input; printf '\n'
-printf '%s' "$input" > "$HOME/Source/wm-install-script/.password"
+read -s INPUT; printf '\n'
+printf '%s' "$INPUT" > "$HOME/Source/wm-install-script/.password"
 
 # Start the actual process
 $HOME/Source/wm-install-script/scripts/script-packages

@@ -4,6 +4,6 @@
 PASSWORD=$(cat $HOME/Source/wm-install-script/.password)
 
 # Replacement for alsa
-printf '%s' "$PASSWORD" | sudo -S mkdir -p /etc/alsa/conf.d
-printf '%s' "$PASSWORD" | sudo -S ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
-printf '%s' "$PASSWORD" | sudo -S ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
+printf '%s' "$PASSWORD" | sudo -S mkdir -p /etc/alsa/conf.d/
+printf '%s' "$PASSWORD" | sudo -S ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d/
+printf '%s' "$PASSWORD" | sudo -S ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d/
