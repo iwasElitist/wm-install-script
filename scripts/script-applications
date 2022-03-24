@@ -12,4 +12,3 @@ curl -fLo "$HOME/.config/nvim/autoload/plug.vim" --create-dirs "https://raw.gith
 cp -r "$HOME/Source/distro-hopping/config/alacritty" "$HOME/.config/alacritty"
 cp -r "$HOME/Source/distro-hopping/config/mpv" "$HOME/.config/mpv"
 cp -r "$HOME/Source/distro-hopping/config/zathura" "$HOME/.config/zathura"
-cp -r "$HOME/Source/distro-hopping/Wallpapers" "$HOME/Pictures/Wallpapers"

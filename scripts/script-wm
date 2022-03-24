@@ -6,3 +6,7 @@ cp -r "$HOME/Source/distro-hopping/config/sxhkd" "$HOME/.config/sxhkd"
 cp -r "$HOME/Source/distro-hopping/config/picom" "$HOME/.config/picom"
 cp -r "$HOME/Source/distro-hopping/config/polybar" "$HOME/.config/polybar"
 cp -r "$HOME/Source/distro-hopping/config/rofi" "$HOME/.config/rofi"
+
+# Set wallpapers
+mkdir "$HOME/Pictures/"
+cp -r "$HOME/Source/distro-hopping/Wallpapers" "$HOME/Pictures/Wallpapers"
